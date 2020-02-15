@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+</head>
+<body>
+
+    <script>
+    var config = {
+        type: Phaser.AUTO,
+        width: 1600,
+        height: 900,
+        physics: {
+            default: 'arcade',
+            arcade: {
+                gravity: { y: 200 }
+            }
+        },
+        
+        scene: {
+            preload: preload,
+            create: create
+        }
+    };
+
+    var game = new Phaser.Game(config);
+
+    function preload ()
+    {
+        //this.load.setBaseURL('http://labs.phaser.io');
+
+        //LOAD ASSETS
+        
+        // this.load.image('sky', 'assets/skies/space3.png');
+        // this.load.image('logo', 'assets/sprites/phaser3-logo.png');
+        // this.load.image('red', 'assets/particles/red.png');
+        this.load.image('map', 'https://scontent.fcxh1-1.fna.fbcdn.net/v/t1.15752-9/86276941_1772710729531105_3810023191443668992_n.png?_nc_cat=104&_nc_ohc=cpwkp8Kojb0AX-SUi_p&_nc_ht=scontent.fcxh1-1.fna&oh=bd28dbaedeeed5adeb36c717f15b9de4&oe=5EC602A5');
+    }
+
+    function create ()
+    {
+
+        this.add.image(800, 450, 'map');
+
+        //mapImage.rotation = 0.14;
+        //var particles = this.add.particles('red');
+
+        // var emitter = particles.createEmitter({
+        //     speed: 100,
+        //     scale: { start: 1, end: 0 },
+        //     blendMode: 'ADD'
+        // });
+
+        // var logo = this.physics.add.image(400, 100, 'logo');
+
+        // logo.setVelocity(100, 200);
+        // logo.setBounce(1, 1);
+        // logo.setCollideWorldBounds(true);
+
+        // emitter.startFollow(logo);
+        // emitter.startFollow(logo);
+    }
+    </script>
+
+</body>
+</html>
