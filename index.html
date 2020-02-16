@@ -35,25 +35,162 @@
         }
     }
 
-    //var blueLine = new Array[(1,2),(1,3)];
-    var blueLineObject = {
-        saddleTown: {
+
+    var trainStations = {
+        saddleTowne: { 
+            xCord: 1500,
+            yCord: 100
+        },
+        martindale: {
+            xCord: 1500,
+            yCord: 200
+        },
+        westwinds: {
+            xCord: 1500,
+            yCord: 300
+        },
+        whitehorn: {
+            xCord: 1500,
+            yCord: 400
+        },
+        rundle : {
+            xCord: 1500,
+            yCord: 500
+        },
+        marlborough :  {
+            xCord: 1500,
+            yCord: 600
+        },
+        franklin :  {
+            xCord: 1500,
+            yCord: 100
+        },
+        maxBell :  {
+            xCord: 1500,
+            yCord: 100
+        },
+        zoo :  {
+            xCord: 1500,
+            yCord: 100
+        },
+        bridgeLand :  {
+            xCord: 1500,
+            yCord: 100
+        },
+        cityHall :  {
+            xCord: 1500,
+            yCord: 100
+        },
+        firstStreet :  {
+            xCord: 1500,
+            yCord: 100
+        },
+        fourthStreet : {
+            xCord: 1500,
+            yCord: 100
+        },
+        seventhStreet : {
+            xCord: 1500,
+            yCord: 100
+        },
+        downtownWest : {
+            xCord: 1500,
+            yCord: 100
+        },
+        sunalta : {
+            xCord: 1500,
+            yCord: 100
+        },
+        shaganappi : {
+            xCord: 1500,
+            yCord: 100
+        },
+        westbrook : {
+            xCord: 1500,
+            yCord: 100
+        },
+        fourtyFifthStreet : {
+            xCord: 1500,
+            yCord: 100
+        },
+       sirocco : {
+            xCord: 1500,
+            yCord: 100
+        },
+        sixtyNinthStreet : {
+            xCord: 1500,
+            yCord: 100
+        },
+        eigthStreet : {
+            xCord: 1500,
+            yCord: 100
+        },
+        sixthStreet : {
+            yCord: 100
+        },
+        thirdStreet : {
+            xCord: 1500,
+            yCord: 100
+        },
+        centreStreet : {
             xCord: 1500,
             yCord: 100
         }
     }
-    console.log(blueLineObject.saddleTown.xCord);
-    console.log(blueLineObject.saddleTown.yCord);
+    
+    var blueLine69St = [
+        trainStations.saddleTowne,
+        trainStations.martindale,
+        trainStations.westwinds,
+        trainStations.whitehorn,
+        trainStations.rundle,
+        trainStations.marlborough,
+        trainStations.franklin,
+        trainStations.maxBell,
+        trainStations.zoo,
+        trainStations.bridgeLand,
+        trainStations.cityHall,
+        trainStations.firstStreet,
+        trainStations.fourthStreet,
+        trainStations.seventhStreet,
+        trainStations.downtownWest,
+        trainStations.sunalta,
+        trainStations.shaganappi,
+        trainStations.westbrook,
+        trainStations.fourtyFifthStreet,
+        trainStations.sirocco,
+        trainStations.sixtyNinthStreet
+    ] 
+
+    var blueLineSaddletowne = [
+        trainStations.sixtyNinthStreet,
+        trainStations.sirocco,
+        trainStations.fourtyFifthStreet,
+        trainStations.westbrook,
+        trainStations.shaganappi,
+        trainStations.sunalta,
+        trainStations.downtownWest,
+        trainStations.eighthStreet,
+        trainStations.sixthStreet,
+        trainStations.thirdStreet,
+        trainStations.centerStreet,
+        trainStations.cityHall,
+        trainStations.bridgeLand,
+        trainStations.zoo,
+        trainStations.maxBell,
+        trainStations.franklin,
+        trainStations.marlborough,
+        trainStations.rundle,
+        trainStations.whitehorn,
+        trainStations.westwinds,
+        trainStations.martindale,
+        trainStations.saddleTown        
+    ]
+    
 
     function preload ()
-    {        //this.load.setBaseURL('http://labs.phaser.io');
-
-        //LOAD ASSETS
+    {      
         
-        // this.load.image('sky', 'assets/skies/space3.png');
-        // this.load.image('logo', 'assets/sprites/phaser3-logo.png');
-        // this.load.image('red', 'assets/particles/red.png');
-
         this.load.image('map', 'https://scontent.fcxh1-1.fna.fbcdn.net/v/t1.15752-9/86388841_811965775972282_7846429260041420800_n.png?_nc_cat=102&_nc_ohc=FVagKJVQ7KMAX9jNSzH&_nc_ht=scontent.fcxh1-1.fna&oh=12291a2418b6be9ff8087aae4d984c22&oe=5EFBD4AB');
         this.load.image('stop','https://scontent.fcxh1-1.fna.fbcdn.net/v/t1.15752-9/86281130_133680774550249_4975397262235533312_n.png?_nc_cat=100&_nc_ohc=ft0wkFNLu5EAX-ti4jR&_nc_ht=scontent.fcxh1-1.fna&oh=8c1f2360d21934b1eeb1b57782dbf8db&oe=5EF931C1');
     }
@@ -61,37 +198,28 @@
     function create ()
     {
 
-        
-
+        console.log(trainStations.saddleTowne.xCord)
         this.add.image(gridMap.length/2, gridMap[0].length/2, 'map');
-        this.add.image(blueLineObject.saddleTown.xCord,blueLineObject.saddleTown.yCord,'stop');
+        this.add.image(trainStations.saddleTowne.xCord, trainStations.saddleTowne.yCord,'stop');
+
         
-        //mapImage.rotation = 0.14;
-        //var particles = this.add.particles('red');
-
-        // var emitter = particles.createEmitter({
-        //     speed: 100,
-        //     scale: { start: 1, end: 0 },
-        //     blendMode: 'ADD'
-        // });
-
-        // var logo = this.physics.add.image(400, 100, 'logo');
-
-        // logo.setVelocity(100, 200);
-        // logo.setBounce(1, 1);
-        // logo.setCollideWorldBounds(true);
-
-        // emitter.startFollow(logo);
-        // emitter.startFollow(logo);
+        
+        
+        
+        
     }
 
     function update ()
     {
-        //SHould update about 60 times a second or
-        // every second
+        
 
         
 
+    }
+    function drawTransitLine(transitLine){
+        transitLine.forEach(stop => {
+            this.add.image(stop.xCord,stop.yCord,'stop');
+        });
     }
 
     </script>

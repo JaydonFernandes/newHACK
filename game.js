@@ -13,9 +13,13 @@ function update(){}
 Project Init - Jaydon
 Project Init - Victor 
 Research - Justin
-Research 
+Research Sehajveer
 Design - David
 
 
+Yum Yum BBQ Chicken - Victor/Sej
+Taiyo Japanese - David/Justin/Jaydon/Brandon
+Zaika Indian - 
+Big Ts - 
 
 */
