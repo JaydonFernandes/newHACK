@@ -1,34 +1,35 @@
 var trainStations = {
+    //blue line stations
     saddleTowne: { 
-        xCord: 1516,
-        yCord: 30
+        xCord: 1517,
+        yCord: 31
     },
     martindale: {
-        xCord: 1491,
-        yCord: 80
+        xCord: 1492,
+        yCord: 81
     },
     westwinds: {
-        xCord: 1441,
-        yCord: 118
+        xCord: 1442,
+        yCord: 119
     },
     whitehorn: {
         xCord: 1392,
-        yCord: 129
+        yCord: 131
     },
     rundle : {
-        xCord: 1340,
+        xCord: 1342,
         yCord: 180
     },
     marlborough :  {
-        xCord: 1291,
-        yCord: 202
+        xCord: 1293,
+        yCord: 206
     },
     franklin :  {
-        xCord: 1240,
-        yCord: 242
+        xCord: 1242,
+        yCord: 243
     },
     maxBell :  {
-        xCord: 1178,
+        xCord: 1180,
         yCord: 281
     },
     zoo :  {
@@ -36,53 +37,55 @@ var trainStations = {
         yCord: 281
     },
     bridgeLand :  {
-        xCord: 1065,
-        yCord: 292
+        xCord: 1068,
+        yCord: 293
     },
     cityHall :  {
-        xCord: 953,
-        yCord: 454
+        xCord: 955,
+        yCord: 455
     },
     firstStreet :  {
-        xCord: 866,
-        yCord: 454
+        xCord: 868,
+        yCord: 455
     },
     fourthStreet : {
-        xCord: 767,
-        yCord: 454
+        xCord: 769,
+        yCord: 455
     },
     seventhStreet : {
         xCord: 681,
-        yCord: 454
+        yCord: 455
     },
     downtownWest : {
-        xCord: 579,
-        yCord: 467
+        xCord: 581,
+        yCord: 468
     },
     sunalta : {
-        xCord: 505,
-        yCord: 479
+        xCord: 507,
+        yCord: 480
     },
     shaganappi : {
-        xCord: 430,
-        yCord: 490
+        xCord: 432,
+        yCord: 493
     },
     westbrook : {
         xCord: 344,
-        yCord: 490
+        yCord: 493
     },
     fourtyFifthStreet : {
-        xCord: 268,
-        yCord: 490
+        xCord: 270,
+        yCord: 493
     },
    sirocco : {
-        xCord: 192,
-        yCord: 490
+        xCord: 194,
+        yCord: 493
     },
     sixtyNinthStreet : {
         xCord: 119,
-        yCord: 490
+        yCord: 493
     },
+    
+    //red line stations
     eigthStreet : {
         xCord: 1500,
         yCord: 100
@@ -180,6 +183,7 @@ var trainStations = {
     }
 }
 
+//saddletowne - 69th street
 var blueLine69St = [
     trainStations.saddleTowne,
     trainStations.martindale,
@@ -204,6 +208,7 @@ var blueLine69St = [
     trainStations.sixtyNinthStreet
 ] 
 
+//69th street - saddletowne
 var blueLineSaddletowne = [
     trainStations.sixtyNinthStreet,
     trainStations.sirocco,
@@ -229,6 +234,7 @@ var blueLineSaddletowne = [
     trainStations.saddleTown        
 ]
 
+//somerset - tuscany
 var redLineTuscany = [
     trainStations.somerset,
     trainStations.shawnessy,
@@ -256,6 +262,7 @@ var redLineTuscany = [
     trainStations.tuscany
 ]
 
+//tuscany - somerset
 var redLineSomerset = [
     trainStations.tuscany,
     trainStations.crowfoot,

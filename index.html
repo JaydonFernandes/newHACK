@@ -21,7 +21,8 @@
         
         scene: {
             preload: preload,
-            create: create
+            create: create,
+            update: update
         }
     };
 
@@ -35,27 +36,33 @@
             gridMap[x].push(y);
         }
     }
-    //gay sej
+    
     function preload ()
     {      
         this.load.image('map', 'assets/calgaryMap.png');
         this.load.image('stop','assets/stop.png');
         this.load.image('blueLine','assets/blueLine.png');
+        this.load.image('train','assets/train.png')
     }
 
     function create ()
     {
         console.log(trainStations.saddleTowne.xCord)
         this.add.image(gridMap.length/2, gridMap[0].length/2, 'map');
-        this.add.image(trainStations.saddleTowne.xCord, trainStations.saddleTowne.yCord,'stop');
         
         blueLine69St.forEach(station => this.add.image(station.xCord, station.yCord,'stop') );
-          
-    } //fight me in smash pussy Victor
+        this.train1 = this.add.sprite(100, 100, 'train');
+
+    } 
+
+    
 
     function update ()
     {
+        //60 FPS
+     this.train1.x =this.train1.x + 5;
      
+
     }
 
     </script>
