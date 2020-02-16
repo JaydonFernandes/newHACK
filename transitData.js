@@ -185,27 +185,27 @@ var trainStations = {
 
 //saddletowne - 69th street
 var blueLine69St = [
-    trainStations.saddleTowne,
-    trainStations.martindale,
-    trainStations.westwinds,
-    trainStations.whitehorn,
-    trainStations.rundle,
-    trainStations.marlborough,
-    trainStations.franklin,
-    trainStations.maxBell,
-    trainStations.zoo,
-    trainStations.bridgeLand,
-    trainStations.cityHall,
-    trainStations.firstStreet,
-    trainStations.fourthStreet,
-    trainStations.seventhStreet,
-    trainStations.downtownWest,
-    trainStations.sunalta,
-    trainStations.shaganappi,
-    trainStations.westbrook,
-    trainStations.fourtyFifthStreet,
-    trainStations.sirocco,
-    trainStations.sixtyNinthStreet
+    this.trainStations.saddleTowne,
+    this.trainStations.martindale,
+    this.trainStations.westwinds,
+    this.trainStations.whitehorn,
+    this.trainStations.rundle,
+    this.trainStations.marlborough,
+    this.trainStations.franklin,
+    this.trainStations.maxBell,
+    this.trainStations.zoo,
+    this.trainStations.bridgeLand,
+    this.trainStations.cityHall,
+    this.trainStations.firstStreet,
+    this.trainStations.fourthStreet,
+    this.trainStations.seventhStreet,
+    this.trainStations.downtownWest,
+    this.trainStations.sunalta,
+    this.trainStations.shaganappi,
+    this.trainStations.westbrook,
+    this.trainStations.fourtyFifthStreet,
+    this.trainStations.sirocco,
+    this.trainStations.sixtyNinthStreet
 ] 
 
 //69th street - saddletowne

@@ -3,6 +3,7 @@
 <head>
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
     <script src="transitData.js"></script>
+    <script src="train.js"></script>
 </head>
 <body>
 
@@ -28,7 +29,7 @@
 
     var game = new Phaser.Game(config);
 
-    var gridMap = new Array()
+    var gridMap = new Array();
     var x;
     for (x = 0; x < config.width; x++) {
         gridMap.push(new Array());
@@ -36,6 +37,8 @@
             gridMap[x].push(y);
         }
     }
+
+    
     
     function preload ()
     {      
@@ -49,21 +52,27 @@
     {
         console.log(trainStations.saddleTowne.xCord)
         this.add.image(gridMap.length/2, gridMap[0].length/2, 'map');
-        
+        console.log("Jaydon Test: " + blueLine69St[0].xCord);
         blueLine69St.forEach(station => this.add.image(station.xCord, station.yCord,'stop') );
-        this.train1 = this.add.sprite(100, 100, 'train');
-
+        train1 = this.add.sprite(blueLine69St[0].xCord, blueLine69St[0].yCord, 'train');
+        myTrain = new Train(blueLine69St, train1);
+        
     } 
-
-    
+       
 
     function update ()
     {
         //60 FPS
-     this.train1.x =this.train1.x + 5;
+     //this.train1.x =this.train1.x + 5;
      
-
+     //myTrain.moveTrain();
+     train1.x = myTrain.moveTrainHorizontal(train1.x);
+     train1.y = myTrain.moveTrainVertical(train1.y);
+     myTrain.checkStation(train1.x, train1.y);
     }
+
+
+
 
     </script>
 
