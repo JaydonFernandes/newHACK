@@ -135,7 +135,87 @@
         centreStreet : {
             xCord: 1500,
             yCord: 100
-        }
+        },
+        tuscany : {
+            xCord: 1500,
+            yCord: 100
+        },
+        crowfoot : {
+            xCord: 1500,
+            yCord: 100
+        },
+        dalhousie : {
+            xCord: 1500,
+            yCord: 100
+        },
+        brentwood : {
+            xCord: 1500,
+            yCord: 100
+        },
+        university : {
+            xCord: 1500,
+            yCord: 100
+        },
+        banffTrail : {
+            xCord: 1500,
+            yCord: 100
+        },
+        lionsPark : {
+            xCord: 1500,
+            yCord: 100
+        },
+        sait : {
+            xCord: 1500,
+            yCord: 100
+        },
+        sunnyside : {
+            xCord: 1500,
+            yCord: 100
+        },
+        victoriaPark : {
+            xCord: 1500,
+            yCord: 100
+        },
+        erlton : {
+            xCord: 1500,
+            yCord: 100
+        },
+        thirtyNinth : {
+            xCord: 1500,
+            yCord: 100
+        },
+        chinook: {
+            xCord: 1500,
+            yCord: 100
+        },
+        heritage : {
+            xCord: 1500,
+            yCord: 100
+        },
+        southland : {
+            xCord: 1500,
+            yCord: 100
+        },
+        anderson : {
+            xCord: 1500,
+            yCord: 100
+        },
+        canyonMeadows : {
+            xCord: 1500,
+            yCord: 100
+        },
+        fishCreek : {
+            xCord: 1500,
+            yCord: 100
+        },
+        shawnessy : {
+            xCord: 1500,
+            yCord: 100
+        },
+        somerset : {
+            xCord: 1500,
+            yCord: 100
+        }//cunt
     }
     
     var blueLine69St = [
@@ -187,39 +267,85 @@
         trainStations.saddleTown        
     ]
     
+    var redLineTuscany = [
+        trainStations.somerset,
+        trainStations.shawnessy,
+        trainStations.fishCreek,
+        trainStations.canyonMeadows,
+        trainStations.anderson,
+        trainStations.southland,
+        trainStations.heritage,
+        trainStations.chinook,
+        trainStations.thirtyNinth,
+        trainStations.erlton,
+        trainStations.victoriaPark,
+        trainStations.cityHall,
+        trainStations.firstStreet,
+        trainStations.fourthStreet,
+        trainStations.seventhStreet,
+        trainStations.sunnyside,
+        trainStations.sait,
+        trainStations.lionsPark,
+        trainStations.banffTrail,
+        trainStations.university,
+        trainStations.brentwood,
+        trainStations.dalhousie,
+        trainStations.crowfoot,
+        trainStations.tuscany
+    ]
+
+    var redLineSomerset = [
+        trainStations.tuscany,
+        trainStations.crowfoot,
+        trainStations.dalhousie,
+        trainStations.brentwood,
+        trainStations.university,
+        trainStations.banffTrail,
+        trainStations.lionsPark,
+        trainStations.sait,
+        trainStations.sunnyside,
+        trainStations.eigthStreet,
+        trainStations.sixthStreet,
+        trainStations.thirdStreet,
+        trainStations.centreStreet,
+        trainStations.cityHall,
+        trainStations.victoriaPark,
+        trainStations.erlton,
+        trainStations.thirtyNinth,
+        trainStations.chinook,
+        trainStations.heritage,
+        trainStations.southland,
+        trainStations.anderson,
+        trainStations.canyonMeadows,
+        trainStations.fishCreek,
+        trainStations.shawnessy,
+        trainStations.somerset
+    ]
 
     function preload ()
     {      
-        
-        this.load.image('map', 'https://scontent.fcxh1-1.fna.fbcdn.net/v/t1.15752-9/86388841_811965775972282_7846429260041420800_n.png?_nc_cat=102&_nc_ohc=FVagKJVQ7KMAX9jNSzH&_nc_ht=scontent.fcxh1-1.fna&oh=12291a2418b6be9ff8087aae4d984c22&oe=5EFBD4AB');
+        this.load.image('map', 'https://scontent.fcxh1-1.fna.fbcdn.net/v/t1.15752-9/86440371_2245266879110260_3562226483525058560_n.png?_nc_cat=107&_nc_ohc=EV6S67Meh6UAX8NGTK5&_nc_ht=scontent.fcxh1-1.fna&oh=7e3a2c6172d7bb7874e925d4c2c97de1&oe=5EC0D1BA');
         this.load.image('stop','https://scontent.fcxh1-1.fna.fbcdn.net/v/t1.15752-9/86281130_133680774550249_4975397262235533312_n.png?_nc_cat=100&_nc_ohc=ft0wkFNLu5EAX-ti4jR&_nc_ht=scontent.fcxh1-1.fna&oh=8c1f2360d21934b1eeb1b57782dbf8db&oe=5EF931C1');
     }
 
     function create ()
     {
-
         console.log(trainStations.saddleTowne.xCord)
         this.add.image(gridMap.length/2, gridMap[0].length/2, 'map');
         this.add.image(trainStations.saddleTowne.xCord, trainStations.saddleTowne.yCord,'stop');
-
         
-        
-        
-        
-        
+        blueLine69St.forEach(station => this.add.image(station.xCord, station.yCord,'stop') );
+          
     }
 
     function update ()
     {
-        
-
-        
-
+     //idk what goes here
     }
+
     function drawTransitLine(transitLine){
-        transitLine.forEach(stop => {
-            this.add.image(stop.xCord,stop.yCord,'stop');
-        });
+        transitLine.forEach(station => this.add.image(station.xCord, station.yCord,'stop') );
+        
     }
 
     </script>
