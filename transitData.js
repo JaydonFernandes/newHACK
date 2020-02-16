@@ -1,87 +1,87 @@
 var trainStations = {
     saddleTowne: { 
-        xCord: 1500,
-        yCord: 100
+        xCord: 1516,
+        yCord: 30
     },
     martindale: {
-        xCord: 1500,
-        yCord: 200
+        xCord: 1491,
+        yCord: 80
     },
     westwinds: {
-        xCord: 1500,
-        yCord: 300
+        xCord: 1441,
+        yCord: 118
     },
     whitehorn: {
-        xCord: 1500,
-        yCord: 400
+        xCord: 1392,
+        yCord: 129
     },
     rundle : {
-        xCord: 1500,
-        yCord: 500
+        xCord: 1340,
+        yCord: 180
     },
     marlborough :  {
-        xCord: 1500,
-        yCord: 600
+        xCord: 1291,
+        yCord: 202
     },
     franklin :  {
-        xCord: 1500,
-        yCord: 100
+        xCord: 1240,
+        yCord: 242
     },
     maxBell :  {
-        xCord: 1500,
-        yCord: 100
+        xCord: 1178,
+        yCord: 281
     },
     zoo :  {
-        xCord: 1500,
-        yCord: 100
+        xCord: 1130,
+        yCord: 281
     },
     bridgeLand :  {
-        xCord: 1500,
-        yCord: 100
+        xCord: 1065,
+        yCord: 292
     },
     cityHall :  {
-        xCord: 1500,
-        yCord: 100
+        xCord: 953,
+        yCord: 454
     },
     firstStreet :  {
-        xCord: 1500,
-        yCord: 100
+        xCord: 866,
+        yCord: 454
     },
     fourthStreet : {
-        xCord: 1500,
-        yCord: 100
+        xCord: 767,
+        yCord: 454
     },
     seventhStreet : {
-        xCord: 1500,
-        yCord: 100
+        xCord: 681,
+        yCord: 454
     },
     downtownWest : {
-        xCord: 1500,
-        yCord: 100
+        xCord: 579,
+        yCord: 467
     },
     sunalta : {
-        xCord: 1500,
-        yCord: 100
+        xCord: 505,
+        yCord: 479
     },
     shaganappi : {
-        xCord: 1500,
-        yCord: 100
+        xCord: 430,
+        yCord: 490
     },
     westbrook : {
-        xCord: 1500,
-        yCord: 100
+        xCord: 344,
+        yCord: 490
     },
     fourtyFifthStreet : {
-        xCord: 1500,
-        yCord: 100
+        xCord: 268,
+        yCord: 490
     },
    sirocco : {
-        xCord: 1500,
-        yCord: 100
+        xCord: 192,
+        yCord: 490
     },
     sixtyNinthStreet : {
-        xCord: 1500,
-        yCord: 100
+        xCord: 119,
+        yCord: 490
     },
     eigthStreet : {
         xCord: 1500,
